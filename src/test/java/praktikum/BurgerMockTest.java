@@ -65,5 +65,25 @@ public class BurgerMockTest {
         assertEquals(expectedText, actualText);
     }
 
+    @Test
+    public void burgerMoveIngredient() {
+
+        List<Ingredient> ingredients = new ArrayList<>();
+        ingredients.add(new Ingredient(IngredientType.SAUCE, "hot sauce", 100));
+        ingredients.add(new Ingredient(IngredientType.SAUCE, "sour cream", 200));
+        ingredients.add(new Ingredient(IngredientType.SAUCE, "chili sauce", 300));
+        Burger burger = new Burger();
+        burger.setBuns(bun);
+        burger.addIngredient(ingredients.get(0));
+        burger.addIngredient(ingredients.get(1));
+        burger.removeIngredient(1);
+        Mockito.when(bun.getPrice()).thenReturn(100F);
+        float actualQuantity = burger.getPrice();
+        float expectedQuantity = 300F;
+        assertEquals(expectedQuantity, actualQuantity, 0.1);
+        assertNotNull(bun);
+
+    }
+
 
 }
