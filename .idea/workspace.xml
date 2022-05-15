@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b8e6b9-075d-4a03-bc85-55f6b161e602" name="Changes" comment="Commit_2">
-      <change afterPath="$PROJECT_DIR$/src/test/java/praktikum/BunTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/praktikum/IngredientTest.java" afterDir="false" />
+    <list default="true" id="c4b8e6b9-075d-4a03-bc85-55f6b161e602" name="Changes" comment="Commit_3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/praktikum/BurgerMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/praktikum/BurgerMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/praktikum/IngredientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/praktikum/IngredientTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/praktikum/BurgerMockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/praktikum/BurgerMockTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,27 +45,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.All in praktikum">
+  <component name="RunManager" selected="JUnit.BurgerMockTest">
     <configuration name="All in praktikum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="praktikum" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BunTest.compareNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="praktikum" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="praktikum.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="praktikum" />
-      <option name="MAIN_CLASS_NAME" value="praktikum.BunTest" />
-      <option name="METHOD_NAME" value="compareNameTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,6 +85,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BurgerMockTest.burgerMoveIngredient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="praktikum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="praktikum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="praktikum" />
+      <option name="MAIN_CLASS_NAME" value="praktikum.BurgerMockTest" />
+      <option name="METHOD_NAME" value="burgerMoveIngredient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IngredientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="praktikum" />
       <extension name="coverage">
@@ -119,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BurgerMockTest" />
+        <item itemvalue="JUnit.BurgerMockTest.burgerMoveIngredient" />
         <item itemvalue="JUnit.All in praktikum" />
         <item itemvalue="JUnit.IngredientTest" />
-        <item itemvalue="JUnit.BurgerMockTest" />
         <item itemvalue="JUnit.BunTest.comparePriceTest" />
-        <item itemvalue="JUnit.BunTest.compareNameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652026003601</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit_3">
+      <created>1652039779129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652039779129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +177,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit_2" />
+    <MESSAGE value="Commit_3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit_3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/QA_java_diplom_1$All_in_praktikum.ic" NAME="All in praktikum Coverage Results" MODIFIED="1652039630959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

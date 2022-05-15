@@ -8,11 +8,6 @@ public class IngredientTest {
 
     Database database = new Database();
 
-    @Before
-    public void setUp() {
-
-    }
-
     @Test
     public void compareNameTest() {
         List<Ingredient> ingredients = database.availableIngredients();

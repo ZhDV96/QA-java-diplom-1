@@ -4,10 +4,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import java.util.ArrayList;
 import java.util.List;
-import static org.hamcrest.Matchers.isA;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.mockito.Mockito.*;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
@@ -36,7 +34,6 @@ public class BurgerMockTest {
         float expectedQuantity = 300F;
         assertEquals(expectedQuantity, actualQuantity, 0.1);
         assertNotNull(bun);
-
     }
 
     @Test
@@ -76,13 +73,15 @@ public class BurgerMockTest {
         burger.setBuns(bun);
         burger.addIngredient(ingredients.get(0));
         burger.addIngredient(ingredients.get(1));
-        burger.removeIngredient(1);
+        burger.addIngredient(ingredients.get(2));
+        burger.removeIngredient(2);
+        burger.moveIngredient(0, 1);
         Mockito.when(bun.getPrice()).thenReturn(100F);
         float actualQuantity = burger.getPrice();
-        float expectedQuantity = 300F;
+        float expectedQuantity = 500F;
+        //дельта выбрана максимально возможная для сравнения чисел как целых
         assertEquals(expectedQuantity, actualQuantity, 0.1);
         assertNotNull(bun);
-
     }
 
 
